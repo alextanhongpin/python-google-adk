@@ -5,5 +5,6 @@ check:
 	uvx ruff check --fix
 
 
-adk:
-	uv run adk web
+web:
+	open http://localhost:8000
+	cd 001_quickstart && uv run adk web
