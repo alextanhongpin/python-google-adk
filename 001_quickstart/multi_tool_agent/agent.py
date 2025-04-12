@@ -43,11 +43,7 @@ def get_current_time(city: str) -> dict:
     tz = ZoneInfo("America/New_York")
     now = datetime.datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 
-    return {
-        "status": "success",
-        "report": f"The current time in {city} is {now}."
-    }
-
+    return {"status": "success", "report": f"The current time in {city} is {now}."}
 
 
 root_agent = Agent(
