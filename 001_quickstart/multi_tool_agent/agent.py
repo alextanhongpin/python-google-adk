@@ -50,7 +50,7 @@ def get_current_time(city: str) -> dict:
 # TODO: native openai https://github.com/google/adk-python/issues/27
 os.environ["OPENAI_API_BASE"] = os.getenv("OPENAI_BASE_URL")
 
-model = os.getenv('CHAT_MODEL', 'llama3.2')
+model = os.getenv("CHAT_MODEL", "llama3.2")
 root_agent = Agent(
     name="weather_time_agent",
     # https://github.com/google/adk-python/issues/49

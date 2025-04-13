@@ -1421,12 +1421,14 @@ name = "python-google-adk"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "fastapi" },
     { name = "google-adk" },
     { name = "litellm" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "fastapi", specifier = ">=0.115.12" },
     { name = "google-adk", specifier = ">=0.1.0" },
     { name = "litellm", specifier = ">=1.65.5" },
 ]
