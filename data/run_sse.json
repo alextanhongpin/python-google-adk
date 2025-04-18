@@ -1,0 +1,14 @@
+{
+  "app_name": "roulette_wheel",
+  "user_id": "u_123",
+  "session_id": "s_123",
+  "new_message": {
+    "role": "user",
+    "parts": [
+      {
+        "text": "I choose square eighteen"
+      }
+    ]
+  },
+  "streaming": true
+}
