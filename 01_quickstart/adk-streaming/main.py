@@ -1,19 +1,17 @@
-import os
-import json
 import asyncio
+import json
+import os
 from pathlib import Path
 
-from google.genai.types import Part, Content
-from google.adk.runners import Runner
+from agent import root_agent
+from fastapi import FastAPI, WebSocket
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from google.adk.agents import LiveRequestQueue
 from google.adk.agents.run_config import RunConfig
+from google.adk.runners import Runner
 from google.adk.sessions.in_memory_session_service import InMemorySessionService
-
-from fastapi import FastAPI, WebSocket
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
-
-from agent import root_agent
+from google.genai.types import Content, Part
 
 APP_NAME = "ADK Streaming Example"
 

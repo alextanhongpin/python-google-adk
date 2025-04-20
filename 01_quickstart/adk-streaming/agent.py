@@ -1,7 +1,6 @@
 from google.adk.agents import Agent
 from google.adk.tools import google_search
 
-
 root_agent = Agent(
     name="basic_search_agent",
     # The Large Language Model (LLM) that agent will use.

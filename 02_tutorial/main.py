@@ -1,11 +1,11 @@
 import asyncio
+import logging
+
 from google.adk.agents import Agent
 from google.adk.models.lite_llm import LiteLlm
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
-
-import logging
 
 logging.basicConfig(level=logging.ERROR)
 

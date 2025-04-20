@@ -1,17 +1,24 @@
+marimo:
+	uv run marimo edit
+
+
 format:
 	uvx ruff format
 
+
 check:
-	uvx ruff check --fix
+	uvx ruff check --fix --select I
+	uv run mypy
 
 
 web:
 	open http://localhost:8000
-	cd 001_quickstart && uv run adk web
+	cd 01_quickstart && uv run adk web
+
 
 api:
 	open http://localhost:8000
-	cd 001_quickstart && uv run adk api_server
+	cd 01_quickstart && uv run adk api_server
 
 
 test:
@@ -24,6 +31,7 @@ test_run:
 	curl -X POST http://0.0.0.0:8000/run \
 	-H "Content-Type: application/json" \
 	-d @data/run.json | jq
+
 
 test_run_sse:
 	curl -X POST http://0.0.0.0:8000/run_sse \
