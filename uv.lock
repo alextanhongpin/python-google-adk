@@ -1698,7 +1698,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "fastapi", specifier = ">=0.115.12" },
-    { name = "google-adk", extras = ["eval"], specifier = ">=0.1.0" },
+    { name = "google-adk", extras = ["database", "eval", "sqlite", "sqlite3"], specifier = ">=0.1.0" },
     { name = "litellm", specifier = ">=1.65.5" },
     { name = "marimo", specifier = ">=0.13.0" },
     { name = "mypy", specifier = ">=1.15.0" },

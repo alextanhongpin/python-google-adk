@@ -1,3 +1,7 @@
+include .env
+export
+
+
 marimo:
 	uv run marimo edit
 
