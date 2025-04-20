@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115.12",
-    "google-adk>=0.1.0",
+    "google-adk[eval]>=0.1.0",
     "litellm>=1.65.5",
     "marimo>=0.13.0",
     "mypy>=1.15.0",
