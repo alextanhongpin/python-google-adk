@@ -11,3 +11,8 @@ dependencies = [
     "marimo>=0.13.0",
     "mypy>=1.15.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "ollama_agent",
+]

@@ -1,5 +1,4 @@
-from google.adk.agents import LlmAgent
-from google.adk.models.lite_llm import LiteLlm
+from ollama_agent import make_agent
 
 
 # Mock tool implementation
@@ -9,8 +8,8 @@ def get_current_time(city: str) -> dict:
 
 
 # --- Example Agent using Ollama's llama3.2 ---
-root_agent = LlmAgent(
-    model=LiteLlm(model="ollama_chat/llama3.2"),  # LiteLLM model string format
+root_agent = make_agent(
+    model="ollama_chat/llama3.2",
     name="root_agent",
     description="Tells the current time in a specified city.",
     instruction="You are a helpful assistant that tells the current time in cities. Use the 'get_current_time' tool for this purpose.",
