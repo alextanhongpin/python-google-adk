@@ -7,7 +7,7 @@ marimo:
 
 
 format:
-	uvx ruff format
+	uv format
 
 
 check:
